@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  }
+ .container{
+  background: linear-gradient(to right bottom, #e9e7e5, #5e5146);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  text-align: center;
+  color: rgb(230, 231, 233);
+  }
+  .app-wrapper {
+  background-color: #25393d;
+  min-width: 400px;
+  min-height: 500px;
+  padding: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+  
+  }
+  .header h1{
+    color:#fff;
+    text-align: center;
+    margin: 30px 0px;
+    
+  }
+
+  .task-input {
+    outline: none;
+    width: 360px;
+    padding: 15px;
+    margin-right: 25px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(216, 210, 210);
+    background-color: rgb(7, 7, 7);
+    border: 1px solid #c89666;
+    border-radius: 10px;
+  }
+
+  .button-add{
+    width: 70px;
+    padding: 15px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #f1af71;
+    cursor: pointer;
+  }
+
+  .list-item{
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid rgb(204, 211, 219);
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 30px;
+  }
+
+  .button-complete,
+  .button-delete,
+  .button-edit{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 28px;
+    border-radius: 50%;
+    
+  }
+
+  
+  .button-complete{
+    color: #be431e;
+    margin-left: 60px;
+  }
+
+  .button-edit{
+    color: #e2d029;
+    margin-left: 20PX;
+    
+  }
+
+  .button-delete{
+    color: #29c6e2;
+    margin-left: 20px;
+    
+    
+  }
+
+  .complete {
+    text-decoration-style:solid ;
+    text-decoration-line: line-trough;
+    text-decoration-color: red;
+    opacity: 0.6;
+  }
+
+  .list{
+    width: 220px;
+    background-color: #25393d;
+    border: none;
+    color: #ccc;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right: 15px;
+
+  }
+
+  input:focus,
+  button:focus{
+    outline: none;
+  }
