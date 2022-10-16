@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  
   }
  .container{
   background: linear-gradient(to right bottom, #e9e7e5, #5e5146);
@@ -11,21 +12,25 @@
   align-items: center ;
   text-align: center;
   color: rgb(230, 231, 233);
+  overflow: auto;
+ 
   }
   .app-wrapper {
   background-color: #25393d;
-  min-width: 400px;
-  min-height: 500px;
+  width: 450px;
+  height: 500px;
   padding: 30px;
   margin-bottom: 10px;
   border-radius: 10px;
   box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
-  
+  overflow: auto;
+ 
   }
-  .header h1{
+  h1{
     color:#fff;
+    font-size: 50px;
     text-align: center;
-    margin: 30px 0px;
+    
     
   }
 
@@ -33,13 +38,15 @@
     outline: none;
     width: 360px;
     padding: 15px;
-    margin-right: 25px;
+    
     margin-top: 20px;
     font-size: 20px;
     color: rgb(216, 210, 210);
     background-color: rgb(7, 7, 7);
     border: 1px solid #c89666;
     border-radius: 10px;
+    
+    
   }
 
   .button-add{
@@ -50,6 +57,7 @@
     border: 0;
     background-color: #f1af71;
     cursor: pointer;
+    margin-top: 7px ;
   }
 
   .list-item{
@@ -59,6 +67,7 @@
     border-radius: 10px;
     padding: 10px;
     max-height: 30px;
+    
   }
 
   .button-complete,
@@ -77,17 +86,19 @@
   .button-complete{
     color: #be431e;
     margin-left: 60px;
+    
   }
 
   .button-edit{
     color: #e2d029;
-    margin-left: 20PX;
+    margin-left: 15PX;
     
   }
 
   .button-delete{
     color: #29c6e2;
-    margin-left: 20px;
+    margin-left: 10px;
+    
     
     
   }
@@ -97,6 +108,7 @@
     text-decoration-line: line-trough;
     text-decoration-color: red;
     opacity: 0.6;
+    
   }
 
   .list{
@@ -107,6 +119,7 @@
     font-size: 20px;
     padding-left: 10px;
     margin-right: 15px;
+    
 
   }
 
@@ -114,3 +127,35 @@
   button:focus{
     outline: none;
   }
+
+  @media screen and  (max-width: 500px) { 
+    .app-wrapper{
+       width: 350px;
+       height: 420px;
+    }
+    .button-complete{
+      margin-left: -35px;
+    }
+
+    .task-input {
+      width: 300px;
+    }
+
+  }
+
+  @media screen and  (max-width: 395px) { 
+    .app-wrapper{
+       width: 300px;
+       height: 380px;
+    }
+    .button-complete{
+      margin-left: -72px;
+    }
+
+    .task-input {
+      width: 270px;
+    }
+
+  }
+    
+  
